@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeCinema.Entities
 {
-    //ThaiHM 
+    //ThaiHM chinh sua
     public class Movie : IEntityBase
     {
         public Movie() { Stocks = new List<Stock>(); }
