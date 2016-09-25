@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeCinema.Entities
 {
+    //ThaiHM 
     public class Movie : IEntityBase
     {
         public Movie() { Stocks = new List<Stock>(); }
