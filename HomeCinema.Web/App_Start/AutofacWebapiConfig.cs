@@ -30,12 +30,12 @@ namespace HomeCinema.Web.App_Start
         {
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             // EF HomeCinemaContext 
-            builder.RegisterType<HomeCinemaContext>() .As<DbContext>() .InstancePerRequest();
+            builder.RegisterType<HomeCinemaContext>().As<DbContext>().InstancePerRequest();
             builder.RegisterType<DbFactory>().As<IDbFactory>().InstancePerRequest();
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
             builder.RegisterGeneric(typeof(EntityBaseRepository<>)).As(typeof(IEntityBaseRepository<>)).InstancePerRequest();
             // Services 
-            builder.RegisterType<EncryptionService>() .As<IEncryptionService>() .InstancePerRequest();
+            builder.RegisterType<EncryptionService>().As<IEncryptionService>().InstancePerRequest();
             builder.RegisterType<MembershipService>().As<IMembershipService>().InstancePerRequest();
             Container = builder.Build();
             return Container;
