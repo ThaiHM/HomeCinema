@@ -8,6 +8,7 @@ namespace HomeCinema.Entities
 {
     public interface IEntityBase
     {
+        //ThaiHM
         int ID { get; set; }
     }
 }
